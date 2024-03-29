@@ -136,6 +136,9 @@
       .signup_v4 .card-body .tab-content {
         padding: 0 1.25rem 1.75em;
       }
+      .form-group span {
+        color: red !important;
+      }
     </style>
 
     <div class="container-fluid">
@@ -218,6 +221,7 @@
                         required=""
                         name="name"
                       />
+                      <span id="nameerror"></span>
                     </div>
                     <div class="form-group col-md-12">
                       <label for="inputName">Mobile No</label>
@@ -229,6 +233,7 @@
                         required=""
                         name="mobile"
                       />
+                      <span id="mobileerror"></span>
                     </div>
                   </div>
                   <div class="form-group col-md-12">
@@ -251,30 +256,33 @@
                       <option>Kotak Mahindra Bank</option>
                       <option>Others</option>
                     </select>
+                    <span id="bankerror"></span>
                   </div>
 
                   <div class="form-group col-md-12">
                     <label for="inputName">Bank Account Number</label>
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
                       id="#"
                       placeholder="Enter Your Bank Account Number"
                       required=""
                       name="acnumber"
                     />
+                    <span id="acerror"></span>
                   </div>
 
                   <div class="form-group col-md-12">
                     <label for="inputName">Re-Bank Account Number</label>
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
                       id="#"
                       placeholder="Enter Your Re Bank Account Number"
                       required=""
                       name="reacnumber"
                     />
+                    <span id="reacerror"></span>
                   </div>
                   <div class="form-group col-md-12">
                     <label for="inputName">IFSC Code</label>
@@ -286,6 +294,7 @@
                       required=""
                       name="ifscnumber"
                     />
+                    <span id="ifscerror"></span>
                   </div>
 
                   <div class="mt-2 mb-3">
@@ -335,18 +344,20 @@
                       <option>Kotak Mahindra Bank</option>
                       <option>Others</option>
                     </select>
+                    <span id="banknameerror"></span>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-12">
                       <label for="inputName">User Id</label>
                       <input
-                        type="password"
+                        type="text"
                         class="form-control"
                         id="inputPassword4"
                         placeholder="User Id"
                         required=""
                         name="userid"
                       />
+                      <span id="useriderror"></span>
                     </div>
                     <div class="form-group col-md-12">
                       <label for="inputName">Password</label>
@@ -358,6 +369,7 @@
                         required=""
                         name="password"
                       />
+                      <span id="passworderror"></span>
                     </div>
                   </div>
 
